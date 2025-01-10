@@ -1,4 +1,4 @@
-# NetFelix 🎬  
+# NetFelix 🎥  
 
 ## Description  
 **NetFelix** is a web platform inspired by Netflix that allows users to search and discover movies. It offers a sleek and user-friendly interface with features like movie search by title and language, and a responsive design for optimal viewing on any device.
@@ -8,8 +8,8 @@
 - 🔍 Search movies by title and language.
 - 🌍 Support for multiple languages (English, French, Tamil, etc.).
 - 🎞️ Displays movie posters and information.
-- 📜 Pagination for browsing results.
-- 🎨 Responsive design for a seamless experience on different devices. 
+- 🔗 Pagination for browsing results.
+- 🎨 Responsive design for a seamless experience on different devices.
 
 ## Tech Stack  
 - **HTML**  
@@ -35,18 +35,16 @@
    npm install
    ```
 
-4. **Run a local server**:  
-   - If you use **Live Server** in VS Code, right-click on `index.html` and select **Open with Live Server**.  
-   - Alternatively, start a local server using:  
+4. **Run a local server** (important for API calls):
+   - With **Live Server** in VS Code: Right-click on `index.html` and select **Open with Live Server**.  
+   - Or, use a local server like `http-server`:
      ```bash
-     npm start
+     npm install -g http-server
+     http-server
      ```
 
-5. **Open the application in your browser**:  
-   If no server setup is required, you can also run the following command in your terminal:  
-   ```bash
-   .\index.html
-   ```
+5. **Access the application in your browser**:  
+   Open the URL provided by Live Server or the local server, e.g., `http://127.0.0.1:5500/netfelix/index.html`. **Note:** Opening the `index.html` file directly (via `file:///`) may prevent API calls from working due to browser security restrictions.
 
 ## Contributing  
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest improvements or report bugs.  
