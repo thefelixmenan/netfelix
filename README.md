@@ -36,7 +36,7 @@
    ```
 
 4. **Run a local server** (important for API calls):
-   - With **Live Server** in VS Code: Right-click on `index.html` and select **Open with Live Server**.  
+   - With **Live Server** in Visual Studio Code: Right-click on `index.html` and select **Open with Live Server**.  
    - Or, use a local server like `http-server`:
      ```bash
      npm install -g http-server
