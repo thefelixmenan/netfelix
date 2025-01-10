@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETFELIX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="introOverlay">
+    <video id="introVideo" autoplay>
+      <source src="video/netfelix-animation-intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <header>
+    <img src="img/netfelix-logo.png" alt="Logo NetFelix" id="logo">
+  </header>
+  <div id="mainContent">
+    <form id="searchForm">
+      <label for="searchInput">Recherche de films:</label>
+      <input type="text" id="searchInput" name="searchInput">
+      <button type="submit">Rechercher</button>
+      <button type="button" id="resetButton">Réinitialiser</button>
+    </form>
+    <div id="languageContainer">
+      <label for="languageSelect">Langue:</label>
+      <select id="languageSelect">
+        <option value="en-US">English</option>
+        <option value="fr-FR">Français</option>
+        <option value="es-ES">Español</option>
+        <option value="de-DE">Deutsch</option>
+        <option value="ta-IN">தமிழ்</option>
+        <option value="it-IT">Italiano</option>
+        <option value="pt-BR">Português</option>
+        <option value="ru-RU">Русский</option>
+        <option value="ja-JP">日本語</option>
+        <option value="ko-KR">한국어</option>
+        <option value="zh-CN">中文</option>
+        <option value="hi-IN">हिन्दी</option>
+        <option value="ar-SA">العربية</option>
+        <option value="tr-TR">Türkçe</option>
+        <option value="nl-NL">Nederlands</option>
+        <option value="pl-PL">Polski</option>
+        <option value="ro-RO">Română</option>
+        <option value="el-GR">Ελληνικά</option>
+      </select>
+    </div>
+    <ul id="resultsList"></ul>
+    <div id="pagination"></div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const introOverlay = document.getElementById('introOverlay');
+      const mainContent = document.getElementById('mainContent');
+
+      setTimeout(() => {
+        introOverlay.style.display = 'none';
+        mainContent.style.display = 'block';
+      }, 7000); 
+    });
+  </script>
+</body>
+</html>
