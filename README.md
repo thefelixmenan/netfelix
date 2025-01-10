@@ -44,7 +44,8 @@
      ```
 
 5. **Access the application in your browser**:  
-   Open the URL provided by Live Server or the local server, e.g., `http://127.0.0.1:5500/netfelix/index.html`. **Note:** Opening the `index.html` file directly (via `file:///`) may prevent API calls from working due to browser security restrictions.
+   Open the URL provided by Live Server or the local server, e.g., `http://127.0.0.1:5500/netfelix/index.html`.
+   **Note:** Opening the `index.html` file directly (via `file:///`) may prevent API calls from working due to browser security restrictions.
 
 ## Contributing  
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest improvements or report bugs.  
